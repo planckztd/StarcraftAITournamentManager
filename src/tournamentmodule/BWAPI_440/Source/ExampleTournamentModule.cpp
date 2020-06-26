@@ -397,7 +397,7 @@ bool ExampleTournamentModule::onAction(BWAPI::Tournament::ActionID actionType, v
 		case Tournament::EnableFlag:
 			switch ( *(int*)parameter )
 			{
-				case Flag::CompleteMapInformation:		return false;
+				case Flag::CompleteMapInformation:		return true;
 				case Flag::UserInput:					return false;
 				default:								break;
 			}
